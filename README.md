@@ -1,2 +1,3 @@
-# artconf
+# ArtConf
+
 Template for Conference: ArtConf
