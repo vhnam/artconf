@@ -8,6 +8,7 @@ export const TypoColors = {
   brassDark: 'brassDark',
   brassLight: 'brassLight',
   black: 'black',
+  white: 'white',
 };
 
 export const TypoVariants = {

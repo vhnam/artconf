@@ -39,6 +39,10 @@
   color: var(--red);
 }
 
+.white {
+  color: var(--white);
+}
+
 /* Variants */
 
 .h1 {

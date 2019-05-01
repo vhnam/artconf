@@ -1,4 +1,5 @@
 import {createElement} from 'react';
+import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
 import {TypoColors, TypoVariants, TypoWeight} from './types';
@@ -6,7 +7,7 @@ import {TypoColors, TypoVariants, TypoWeight} from './types';
 import styles from './Typography.module.css';
 
 const Typography = ({
-  tag = 'div',
+  tag,
   color,
   variant,
   weight,
@@ -20,6 +21,8 @@ const Typography = ({
         return styles.inherit;
       case TypoColors.black:
         return styles.black;
+      case TypoColors.blueDarker:
+        return styles.blueDarker;
       case TypoColors.blueDark:
         return styles.blueDark;
       case TypoColors.blueLight:
@@ -34,6 +37,8 @@ const Typography = ({
         return styles.grey;
       case TypoColors.red:
         return styles.red;
+      case TypoColors.white:
+        return styles.white;
       default:
         return TypoColors.black;
     }
@@ -88,6 +93,19 @@ const Typography = ({
     },
     children,
   );
+};
+
+Typography.propTypes = {
+  tag: PropTypes.string,
+  color: PropTypes.string,
+  variant: PropTypes.string,
+  weight: PropTypes.string,
+  className: PropTypes.string,
+  children: PropTypes.node.isRequired,
+};
+
+Typography.defaultProps = {
+  tag: 'div',
 };
 
 export default Typography;

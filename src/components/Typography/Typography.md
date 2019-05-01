@@ -21,6 +21,7 @@
 <Typography color="greyDark">Grey Dark</Typography>
 <Typography color="grey">Grey</Typography>
 <Typography color="red">Red</Typography>
+<Typography color="white">White</Typography>
 ```
 
 ### Weights
