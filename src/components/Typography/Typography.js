@@ -1,5 +1,6 @@
 import {createElement} from 'react';
 import clsx from 'clsx';
+
 import {TypoColors, TypoVariants, TypoWeight} from './types';
 
 import styles from './Typography.module.css';
@@ -52,10 +53,8 @@ const Typography = ({
         return styles.h5;
       case TypoVariants.body:
         return styles.body;
-      case TypoVariants.smallButton:
-        return styles.smallButton;
-      case TypoVariants.largeButton:
-        return styles.largeButton;
+      case TypoVariants.button:
+        return styles.button;
       default:
         return TypoVariants.body;
     }

@@ -18,8 +18,7 @@ export const TypoVariants = {
   h4: 'h4',
   h5: 'h5',
   body: 'body',
-  smallButton: 'smallButton',
-  largeButton: 'largeButton',
+  button: 'button',
 };
 
 export const TypoWeight = {

@@ -71,12 +71,7 @@
   line-height: var(--line-height-body);
 }
 
-.smallButton {
-  font-size: var(--font-size-button);
-  line-height: var(--line-height-button);
-}
-
-.largeButton {
+.button {
   font-size: var(--font-size-button);
   line-height: var(--line-height-button);
 }

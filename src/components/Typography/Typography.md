@@ -7,8 +7,7 @@
 <Typography variant="h4">Heading 4</Typography>
 <Typography variant="h5">Heading 5</Typography>
 <Typography variant="body">Body</Typography>
-<Typography variant="smallButton">Small Button</Typography>
-<Typography variant="largeButton">Large Button</Typography>
+<Typography variant="button">Button</Typography>
 ```
 
 ### Colors
