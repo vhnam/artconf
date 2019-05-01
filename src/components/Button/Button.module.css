@@ -1,0 +1,17 @@
+.button {
+  width: 100%;
+  padding-top: 1.125em;
+  padding-bottom: 1.125em;
+  border: none;
+  outline: none;
+  background-color: var(--blue-dark);
+  cursor: pointer;
+}
+
+.button:hover {
+  filter: brightness(115%);
+}
+
+.button:active {
+  filter: brightness(85%);
+}
