@@ -1,0 +1,16 @@
+/* Color palette */
+
+:root {
+  --blue-dark: #000235;
+  --blue-light: #337ab7;
+
+  --grey-default: #565659;
+  --grey-dark: #292929;
+
+  --red: #af161b;
+
+  --brass-light: #c6b58c;
+  --brass-dark: #634a10;
+
+  --black: #4a4a4a;
+}

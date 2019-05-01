@@ -1,0 +1,100 @@
+.inherit {
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Colors */
+
+.black {
+  color: var(--black);
+}
+
+.blueDark {
+  color: var(--blue-dark);
+}
+
+.blueLight {
+  color: var(--blue-ligth);
+}
+
+.brassDark {
+  color: var(--brass-dark);
+}
+
+.brassLight {
+  color: var(--brass-light);
+}
+
+.greyDark {
+  color: var(--grey-dark);
+}
+
+.grey {
+  color: var(--grey);
+}
+
+.red {
+  color: var(--red);
+}
+
+/* Variants */
+
+.h1 {
+  font-size: var(--font-size-H1);
+  line-height: var(--line-height-H1);
+}
+
+.h2 {
+  font-size: var(--font-size-H2);
+  line-height: var(--line-height-H2);
+}
+
+.h3 {
+  font-size: var(--font-size-H3);
+  line-height: var(--line-height-H3);
+}
+
+.h4 {
+  font-size: var(--font-size-H4);
+  line-height: var(--line-height-H4);
+}
+
+.h5 {
+  font-size: var(--font-size-H5);
+  line-height: var(--line-height-H5);
+}
+
+.body {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+
+.smallButton {
+  font-size: var(--font-size-button);
+  line-height: var(--line-height-button);
+}
+
+.largeButton {
+  font-size: var(--font-size-button);
+  line-height: var(--line-height-button);
+}
+
+/* Weight */
+
+.light {
+  font-weight: var(--font-weight-light);
+}
+
+.regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.semibold {
+  font-weight: var(--font-weight-semibold);
+}
