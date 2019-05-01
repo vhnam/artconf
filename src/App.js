@@ -6,6 +6,14 @@ import MainLayout from './layouts/MainLayout';
 
 import Loading from './components/Loading';
 
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons';
+
+import './App.css';
+import config from './config';
+
+library.add(faBars, faTimes);
+
 const HomePage = Loadable({
   loader: () => import('./scenes/Home'),
   loading: Loading,
@@ -16,8 +24,8 @@ const IntroductionPage = Loadable({
   loading: Loading,
 });
 
-const LatestConferencePage = Loadable({
-  loader: () => import('./scenes/LatestConference'),
+const GalleryPage = Loadable({
+  loader: () => import('./scenes/Gallery'),
   loading: Loading,
 });
 
@@ -38,20 +46,24 @@ const SpeakersPage = Loadable({
 
 function App() {
   return (
-    <MainLayout>
-      <Router>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/introduction" exact component={IntroductionPage} />
+    <Router>
+      <MainLayout>
+        <Route path={config.paths.home} exact component={HomePage} />
         <Route
-          path="/latest-conference"
+          path={config.paths.introduction}
           exact
-          component={LatestConferencePage}
+          component={IntroductionPage}
         />
-        <Route path="/registration" exact component={RegistrationPage} />
-        <Route path="/schedule" exact component={SchedulePage} />
-        <Route path="/speakers" exact component={SpeakersPage} />
-      </Router>
-    </MainLayout>
+        <Route path={config.paths.schedule} exact component={SchedulePage} />
+        <Route path={config.paths.speakers} exact component={SpeakersPage} />
+        <Route path={config.paths.gallery} exact component={GalleryPage} />
+        <Route
+          path={config.paths.registration}
+          exact
+          component={RegistrationPage}
+        />
+      </MainLayout>
+    </Router>
   );
 }
 

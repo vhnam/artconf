@@ -1,0 +1,9 @@
+.link {
+  display: block;
+  margin: 0.5em 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--font-size-H1);
+  font-weight: var(--font-weight-semibold);
+  color: var(--black);
+  text-decoration: none;
+}

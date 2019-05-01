@@ -1,0 +1,8 @@
+.wrapper {
+  min-height: 100vh;
+  background-color: #f4f4f6;
+}
+
+.content {
+  margin-top: 3.125em;
+}
