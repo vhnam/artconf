@@ -9,7 +9,7 @@ import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons';
 library.add(faBars, faTimes);
 
 <Router>
-  <div style={{position: 'relative', height: '43.75em'}}>
+  <div style={{position: 'relative', height: '43.75em', margin: '-16px'}}>
     <Menu>
       <MenuItem href={config.paths.home}>Home</MenuItem>
       <MenuItem href={config.paths.introduction}>Introduction</MenuItem>

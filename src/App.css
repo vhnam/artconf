@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600|Open+Sans:300,400,600');
 
 @import './assets/css/colors.css';
+@import './assets/css/grid.css';
 @import './assets/css/typography.css';
 
 body {
