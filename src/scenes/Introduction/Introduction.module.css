@@ -1,0 +1,29 @@
+.heading {
+  margin-top: 1.875em;
+  margin-bottom: 0.5em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section {
+  margin-bottom: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5em;
+  line-height: 1em;
+  letter-spacing: 0.0625em;
+}
+
+.illustration {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 62em) {
+  .wrapper {
+    height: calc(100vh - 9.5em);
+    overflow-y: auto;
+  }
+
+  .heading {
+    margin-top: 0;
+  }
+}
