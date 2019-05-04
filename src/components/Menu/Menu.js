@@ -57,7 +57,10 @@ const Menu = ({className, children}) => {
                   </Typography>
                   <div className="row">
                     <div className="col-lg-2">
-                      <Button className={styles.btnRegister}>
+                      <Button
+                        className={styles.btnRegister}
+                        href={config.paths.registration}
+                      >
                         Register Now
                       </Button>
                     </div>
