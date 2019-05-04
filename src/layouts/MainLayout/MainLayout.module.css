@@ -8,7 +8,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 62em) and (max-height: 75em) {
+@media only screen and (min-width: 62rem) and (orientation: landscape) {
   .wrapper {
     display: flex;
     flex-direction: row;

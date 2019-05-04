@@ -42,7 +42,7 @@
 
 @media only screen and (min-width: 62em) {
   .wrapper {
-    height: calc(100vh - 9.5em);
+    height: calc(100vh - 10em);
   }
 }
 

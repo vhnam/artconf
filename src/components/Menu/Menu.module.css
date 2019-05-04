@@ -59,7 +59,7 @@
   }
 }
 
-@media only screen and (min-width: 62em) and (max-height: 75em) {
+@media only screen and (min-width: 62em) and (orientation: landscape) {
   .wrapper {
     justify-content: center;
     width: 3.5em;
