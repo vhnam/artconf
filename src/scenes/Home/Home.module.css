@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 3.5em);
+}
+
+.container {
+  display: block;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6em;
+  line-height: 1em;
+  letter-spacing: 0.0625em;
+}
+
+.subHeading {
+  margin-top: 1.875em;
+  line-height: 1.25em;
+}
+
+.location {
+  margin-top: 2.5em;
+  line-height: 1.25em;
+}
+
+.btnRegister {
+  margin-top: 1.875em;
+}
+
+.illustration {
+  display: none;
+  width: 100%;
+}
+
+@media only screen and (min-width: 48em) {
+  .illustration {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .wrapper {
+    height: calc(100vh - 9.5em);
+  }
+}
