@@ -29,8 +29,8 @@ const sections = [
 
 const Introduction = () => {
   return (
-    <div className="container">
-      <div className={styles.wrapper}>
+    <div className={styles.wrapper}>
+      <div className="container">
         <Typography
           className={styles.heading}
           variant={TypoVariants.h1}
