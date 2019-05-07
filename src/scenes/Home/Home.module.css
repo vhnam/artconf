@@ -16,18 +16,16 @@
 .heading {
   font-family: 'Montserrat', sans-serif;
   font-size: 6rem;
-  line-height: 5rem;
+  line-height: 0.875;
   letter-spacing: 0.0625rem;
 }
 
 .subHeading {
   margin-top: 0.875rem;
-  line-height: 1.75rem;
 }
 
 .location {
   margin-top: 2.5rem;
-  line-height: 1.25rem;
 }
 
 .btnRegister {
@@ -40,7 +38,7 @@
 
 @media only screen and (min-width: 768px) {
   .wrapperIllustration {
-    display: block;
+    display: flex;
   }
 }
 
@@ -54,6 +52,5 @@
 @media only screen and (min-width: 1200px) {
   .heading {
     font-size: 8rem;
-    line-height: 6rem;
   }
 }

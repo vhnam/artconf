@@ -2,7 +2,6 @@
   color: inherit;
   font-weight: inherit;
   font-size: inherit;
-  line-height: inherit;
 }
 
 /* Colors */
@@ -47,37 +46,30 @@
 
 .h1 {
   font-size: var(--font-size-H1);
-  line-height: var(--line-height-H1);
 }
 
 .h2 {
   font-size: var(--font-size-H2);
-  line-height: var(--line-height-H2);
 }
 
 .h3 {
   font-size: var(--font-size-H3);
-  line-height: var(--line-height-H3);
 }
 
 .h4 {
   font-size: var(--font-size-H4);
-  line-height: var(--line-height-H4);
 }
 
 .h5 {
   font-size: var(--font-size-H5);
-  line-height: var(--line-height-H5);
 }
 
 .body {
   font-size: var(--font-size-body);
-  line-height: var(--line-height-body);
 }
 
 .button {
   font-size: var(--font-size-button);
-  line-height: var(--line-height-button);
 }
 
 /* Weight */
