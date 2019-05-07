@@ -10,63 +10,6 @@
   list-style-type: none;
 }
 
-.speaker {
-  display: table;
-  padding: 1rem;
-  margin: 0 -1rem;
-  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-
-.speaker:hover {
-  color: var(--white);
-  background-color: var(--red);
-}
-
-.name {
-  font-family: 'Montserrat', sans-serif;
-  display: block;
-}
-
-.work {
-  visibility: hidden;
-}
-
-.speaker:hover .work {
-  visibility: visible;
-}
-
-.profile {
-  margin: 3em auto;
-  text-align: center;
-}
-
-.avatar {
-  width: 20rem;
-  height: 20rem;
-  margin-bottom: 2rem;
-  border-radius: 50%;
-}
-
-.description {
-  position: relative;
-  padding-left: 2rem;
-  text-align: left;
-}
-
-.description::before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 1rem;
-  bottom: 0;
-  border: 0.125em solid var(--brass-dark);
-}
-
-.profileSpeaker {
-  margin-bottom: 2rem;
-}
-
 @media only screen and (min-width: 992px) {
   .wrapper {
     height: calc(100vh - 10em);
@@ -79,33 +22,8 @@
   }
 }
 
-@media only screen and (min-width: 992px) and (orientation: landscape) {
-  .profile {
-    display: flex;
-  }
-
-  .description {
-    display: table;
-    max-width: 40rem;
-    margin-left: 3rem;
-  }
-}
-
 @media only screen and (min-width: 1200px) {
   .list {
     display: block;
-  }
-
-  .profile {
-    display: block;
-    width: 75%;
-  }
-
-  .profileSpeaker {
-    display: none;
-  }
-
-  .description {
-    margin-left: 0;
   }
 }

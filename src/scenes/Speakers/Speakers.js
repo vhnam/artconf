@@ -3,10 +3,14 @@ import React from 'react';
 import Typography, {
   TypoVariants,
   TypoWeight,
-  TypoColors,
 } from '../../components/Typography';
+import Carousel from '../../components/Carousel';
+import CarouselController from '../../components/CarouselController';
+
+import Speaker from './components/Speaker';
 
 import styles from './Speakers.module.css';
+import NavigationItem from './components/NavigationItem/NavigationItem';
 
 const speakers = [
   {
@@ -30,7 +34,8 @@ const speakers = [
     work: 'German industrial designer',
     description:
       'Dieter Rams is a German industrial designer and retired academic closely associated with the consumer products company Braun and the functionalist school of industrial design.',
-    avatar: 'https://en.wikipedia.org/wiki/File:Designer-Dieter_Rams.jpg',
+    avatar:
+      'https://rogervand.files.wordpress.com/2016/11/4303876035_78b26b28b4.jpg',
   },
   {
     name: 'Jakob Nielsen',
@@ -61,55 +66,32 @@ const Speakers = () => {
         >
           Our <br /> speakers
         </Typography>
-        <div className="row">
-          <div className="col-xl-2">
-            <ul className={styles.list}>
-              {speakers.map((speaker) => (
-                <li>
-                  <span className={styles.speaker}>
-                    <Typography
-                      tag="span"
-                      className={styles.name}
-                      variant={TypoVariants.h3}
-                    >
-                      {speaker.name}
-                    </Typography>
-                    <span className={styles.work}>{speaker.work}</span>
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="col-xl-2">
-            <div className={styles.profile}>
-              <img
-                className={styles.avatar}
-                src={speakers[0].avatar}
-                alt={speakers[0].name}
-              />
-              <div>
-                <div className={styles.profileSpeaker}>
-                  <Typography
-                    color={TypoColors.brassDark}
-                    variant={TypoVariants.h1}
-                  >
-                    {speakers[0].name}
-                  </Typography>
-                  <Typography
-                    color={TypoColors.grey}
-                    variant={TypoVariants.h3}
-                    weight={TypoWeight.light}
-                  >
-                    {speakers[0].work}
-                  </Typography>
-                </div>
-                <Typography tag="p" className={styles.description}>
-                  {speakers[0].description}
-                </Typography>
+        <CarouselController>
+          {(slide, setSlide) => (
+            <div className="row">
+              <div className="col-xl-2">
+                <ul className={styles.list}>
+                  {speakers.map((speaker, index) => (
+                    <NavigationItem
+                      key={speaker.name}
+                      speaker={speaker}
+                      active={slide === index}
+                      index={index}
+                      onChangeIndex={setSlide}
+                    />
+                  ))}
+                </ul>
+              </div>
+              <div className="col-xl-2">
+                <Carousel slide={slide} changeSlide={setSlide}>
+                  {speakers.map((speaker) => (
+                    <Speaker key={speaker.name} speaker={speaker} />
+                  ))}
+                </Carousel>
               </div>
             </div>
-          </div>
-        </div>
+          )}
+        </CarouselController>
       </div>
     </div>
   );
