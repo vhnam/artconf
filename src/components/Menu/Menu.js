@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {Link} from 'react-router-dom';
@@ -13,19 +13,17 @@ import Typography, {TypoVariants, TypoWeight} from '../Typography';
 
 import styles from './Menu.module.css';
 
-const Menu = ({className, children}) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
+const Menu = ({isOpen, onClick, className, children}) => {
   return (
     <div className={clsx(styles.wrapper, className)}>
       <Link className={styles.faviconContainer} to={config.paths.home}>
-        <img className={styles.favicon} src={imgFavicon} alt="ArtConf" />
+        <img
+          className={styles.favicon}
+          src={imgFavicon}
+          alt={config.conferenceName}
+        />
       </Link>
-      <span className={styles.button} onClick={toggleMenu}>
+      <span className={styles.button} onClick={onClick}>
         {!isOpen && <FontAwesomeIcon icon="bars" />}
         {isOpen && <FontAwesomeIcon icon="times" />}
       </span>
@@ -76,6 +74,8 @@ const Menu = ({className, children}) => {
 };
 
 Menu.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
 };

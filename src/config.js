@@ -1,4 +1,5 @@
 const config = {
+  conferenceName: 'ArtConf',
   paths: {
     home: '/',
     introduction: '/introduction',

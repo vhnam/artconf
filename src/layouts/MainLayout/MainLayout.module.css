@@ -8,6 +8,14 @@
   display: none;
 }
 
+.lockScreen {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
 @media only screen and (min-width: 62rem) and (orientation: landscape) {
   .wrapper {
     display: flex;
