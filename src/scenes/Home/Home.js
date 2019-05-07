@@ -49,7 +49,7 @@ const Home = () => {
           </div>
         </div>
         <div className="col-md-2">
-          <div className={styles.wrapper}>
+          <div className={styles.wrapperIllustration}>
             <img
               className={styles.illustration}
               src={imgPrototypingProcess}

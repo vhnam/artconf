@@ -3,6 +3,7 @@ import React from 'react';
 import Typography, {
   TypoVariants,
   TypoWeight,
+  TypoColors,
 } from '../../components/Typography';
 
 import imgConferencce from '../../assets/img/conference.svg';
@@ -22,13 +23,21 @@ const Registration = () => {
         </Typography>
         <div className="row">
           <div className="col-lg-2">
-            <Typography className={styles.subHeading} variant={TypoVariants.h2}>
+            <Typography
+              className={styles.subHeading}
+              color={TypoColors.brassDark}
+              variant={TypoVariants.h2}
+            >
               Registration time
             </Typography>
             <Typography tag="p" className={styles.description}>
               From September 15 - 20, 2019
             </Typography>
-            <Typography className={styles.subHeading} variant={TypoVariants.h2}>
+            <Typography
+              className={styles.subHeading}
+              color={TypoColors.brassDark}
+              variant={TypoVariants.h2}
+            >
               The priority to review
             </Typography>
             <Typography tag="p" className={styles.description}>
@@ -41,13 +50,17 @@ const Registration = () => {
               Committee of DCS-19 (sent to the Facilitators or Philosophers and
               cc to Ms. Trang).
             </Typography>
-            <Typography className={styles.subHeading} variant={TypoVariants.h2}>
+            <Typography
+              className={styles.subHeading}
+              color={TypoColors.brassDark}
+              variant={TypoVariants.h2}
+            >
               Registration methods
             </Typography>
             <Typography tag="p" className={styles.description}>
               Mail to Ms. Phung Thien Trang –{' '}
-              <a href="mailto:dcs@hcmus.edu.vn">dcs@hcmus.edu.vn</a> with Subject
-              mail "Đăng ký tham gia DCS-19"
+              <a href="mailto:dcs@hcmus.edu.vn">dcs@hcmus.edu.vn</a> with
+              Subject mail "Đăng ký tham gia DCS-19"
             </Typography>
             <Typography tag="p" className={styles.description}>
               Content of mail:

@@ -19,39 +19,39 @@ html {
   margin-left: auto;
 }
 
-@media (min-width: 36em) {
+@media (min-width: 576px) {
   .container {
-    max-width: 33.75em;
+    max-width: 33.75rem;
   }
 }
 
-@media (min-width: 48em) {
+@media (min-width: 768px) {
   .container {
-    max-width: 45em;
+    max-width: 45rem;
   }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 992px) {
   .container {
-    max-width: 60em;
+    max-width: 60rem;
   }
 }
 
-@media (min-width: 75em) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 71.25em;
+    max-width: 71.25rem;
   }
 }
 
-@media (min-width: 100em) {
+@media (min-width: 1600px) {
   .container {
-    max-width: 90em;
+    max-width: 90rem;
   }
 }
 
-@media (min-width: 120em) {
+@media (min-width: 1920px) {
   .container {
-    max-width: 100em;
+    max-width: 100rem;
   }
 }
 
@@ -121,7 +121,7 @@ html {
   max-width: 100%;
 }
 
-@media only screen and (min-width: 36em) {
+@media only screen and (min-width: 576px) {
   .col-sm {
     flex-basis: 0;
     flex-grow: 1;
@@ -149,7 +149,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 768px) {
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
@@ -177,7 +177,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 62em) {
+@media only screen and (min-width: 992px) {
   .col-lg {
     flex-basis: 0;
     flex-grow: 1;
@@ -205,7 +205,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 1200px) {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;

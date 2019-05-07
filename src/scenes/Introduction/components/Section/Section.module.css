@@ -1,8 +1,13 @@
 .wrapper {
-  margin-bottom: 5em;
+  margin-bottom: 3rem;
 }
 
 .title,
 .description {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }

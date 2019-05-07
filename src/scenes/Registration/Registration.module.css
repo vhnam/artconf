@@ -1,11 +1,11 @@
 .heading {
-  margin-top: 1.875em;
-  margin-bottom: 0.5em;
+  margin-top: 1.875rem;
+  margin-bottom: 0.5rem;
   font-family: 'Montserrat', sans-serif;
 }
 
 .subHeading {
-  margin-top: 1em;
+  margin-top: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -14,9 +14,14 @@
   width: 100%;
 }
 
-@media only screen and (min-width: 62em) {
+.description {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 992px) {
   .wrapper {
-    height: calc(100vh - 10em);
+    height: calc(100vh - 10rem);
     overflow-y: auto;
     overflow-x: hidden;
   }

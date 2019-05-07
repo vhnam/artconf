@@ -1,7 +1,12 @@
-.wrapper {
+.wrapper,
+.wrapperIllustration {
   display: flex;
   align-items: center;
-  height: calc(100vh - 3.5em);
+  height: calc(100vh - 3.5rem);
+}
+
+.wrapperIllustration {
+  display: none;
 }
 
 .container {
@@ -10,44 +15,45 @@
 
 .heading {
   font-family: 'Montserrat', sans-serif;
-  font-size: 6em;
-  line-height: 1em;
-  letter-spacing: 0.0625em;
+  font-size: 6rem;
+  line-height: 5rem;
+  letter-spacing: 0.0625rem;
 }
 
 .subHeading {
-  margin-top: 1.875em;
-  line-height: 1.25em;
+  margin-top: 0.875rem;
+  line-height: 1.75rem;
 }
 
 .location {
-  margin-top: 2.5em;
-  line-height: 1.25em;
+  margin-top: 2.5rem;
+  line-height: 1.25rem;
 }
 
 .btnRegister {
-  margin-top: 1.875em;
+  margin-top: 1.875rem;
 }
 
 .illustration {
-  display: none;
   width: 100%;
 }
 
-@media only screen and (min-width: 48em) {
-  .illustration {
+@media only screen and (min-width: 768px) {
+  .wrapperIllustration {
     display: block;
   }
 }
 
-@media only screen and (min-width: 62em) {
-  .wrapper {
-    height: calc(100vh - 10em);
+@media only screen and (min-width: 992px) {
+  .wrapper,
+  .wrapperIllustration {
+    height: calc(100vh - 10rem);
   }
 }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 1200px) {
   .heading {
-    font-size: 10em;
+    font-size: 8rem;
+    line-height: 6rem;
   }
 }
